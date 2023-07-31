@@ -1,0 +1,75 @@
+/* set document to defaults, set margin to o, padding to 0, set font-faily and box-sizing to border box */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* container class containing app
+set width of screen to 100% of screen, min-height relative to 100vh units which is whole, background colour to a linear gradiant with a white text colour, set padding of top and left to percentages */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600px;
+}
+
+.container h1 img{
+    width: 60px;
+}
+
+.container button img{
+    width: 25px;
+    margin-right: 8px;
+}
+
+/* generate boz for element using display, align the items contained centrally, set a background to a linear gradiant colour, set text color to white, set font size and give outline to element and border of element 0 value, round edges using border-radius, set padding, margin and cursor */
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+
+}
+
+/* set position relative to other elements, set width to 100% of container, max and min width set, set background colour, text colour, padding for seperation and margin, set outline to none and round edges */
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/* delete icon
+set width of icon field, set poisition to absolute then using bottom and right values to position it 15px from each and set cursor to pointer */
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
