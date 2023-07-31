@@ -13,8 +13,14 @@ create_btn.addEventListener("click", ()=> {
     let img = document.createElement("img");
     input_box.className = "input-box";
     // TODO CHECK CORRECT SPELLING
-    input_box.setAttributes("contenteditable", "true");
+    input_box.setAttribute("contenteditable", "true");
     img.src = "images/delete.png";
     notes_container.appendChild(input_box).appendChild(img)
 
+})
+
+notes_container.addEventListener("click", (e)=> {
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.remove();
+    }
 })
