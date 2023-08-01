@@ -4,7 +4,7 @@
 const notes_container = document.querySelector(".notes-container");
 const create_btn = document.querySelector(".btn");
 // select all notes so we can iterate through
-const notes = document.querySelectorAll(".input-box");
+let notes = document.querySelectorAll(".input-box");
 
 function show_notes (){
     notes_container.innerHTML = localStorage.getItem("notes");
@@ -32,7 +32,7 @@ notes_container.addEventListener("click", (e)=> {
     if(e.target.tagName === "IMG"){
         e.target.parentElement.remove();
         update_storage();
-    } else if (e.target.tagName === "p") {
+    } else if (e.target.tagName === "P") {
         notes = document.querySelectorAll(".input-box");
         notes.forEach(nt => {
             nt.onkeyup = function(){
